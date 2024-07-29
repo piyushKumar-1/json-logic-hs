@@ -12,7 +12,7 @@
           autoWire = [ "packages" "checks" ];
         };
         process-compose = { };
-        packages.default = self'.packages.namma-dsl;
+        packages.default = self'.packages.json-logic-hs;
         devShells.default = pkgs.mkShell {
           # cf. https://haskell.flake.page/devshell#composing-devshells
           inputsFrom = [
