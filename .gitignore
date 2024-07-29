@@ -1,2 +1,4 @@
 /dist-newstyle
 /.hie
+/.cabal-dir
+/.pre-commit-config.yaml
