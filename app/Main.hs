@@ -7,6 +7,6 @@ import qualified Data.Aeson.QQ.Simple as AQ
 
 main :: IO ()
 main = do
-  let tests = [AQ.aesonQQ|{ "==" : [1, 1] }|]
-  let data_ = [AQ.aesonQQ|{}|]
+  let tests = [AQ.aesonQQ|{"filter" : { {"var": "integers"} , { "==" : [{"var": ""}, 1] }}|]
+  let data_ = [AQ.aesonQQ|{ "integers": [1, 2, 3, 4, 1]}|]
   print $ jsonLogic tests data_
